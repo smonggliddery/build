@@ -7,7 +7,7 @@ This table is the authoritative reference for transformer decisions. Any new ski
 | Repo-local skill directory | `.claude/skills/` | `.opencode/skills/` (also reads `.claude/skills/`) | `.agents/skills/` |
 | Runtime `$ARGUMENTS` substitution in SKILL.md | Yes | No | No |
 | Slash-command skill invocation (`/build:name`) | Yes | Yes — via `.opencode/commands/*.md` wrappers shipped by this plugin (flat names: `/impl-plan` etc.) | No — use `$<name>` or `$build:<name>` (plugin-namespaced) |
-| Plugin distribution | Yes — `.claude-plugin/` | No — copy `.opencode/` bundle | Yes — `codex plugin marketplace add smonggliddery/build` |
+| Plugin distribution | Yes — `.claude-plugin/` | No — copy `.opencode/` bundle | Yes — `codex plugin marketplace add jameshemson/build` |
 | Sub-agent / Task tools (`Agent`, `TaskCreate`, etc.) | Yes | No | No |
 | Per-skill `model` / `effort` / `context` frontmatter | Yes | No | No |
 | Per-skill `allowed-tools` frontmatter | Yes | No | No |
@@ -40,7 +40,7 @@ Two supported paths:
 **Plugins UI / CLI install.** Users who don't want to clone the repo can register this repo as a Codex marketplace and install the `build` plugin from the Plugins UI:
 
 ```sh
-codex plugin marketplace add smonggliddery/build
+codex plugin marketplace add jameshemson/build
 codex plugin install build/build
 ```
 

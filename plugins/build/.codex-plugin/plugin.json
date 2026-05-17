@@ -5,8 +5,8 @@
   "author": {
     "name": "James Hemson"
   },
-  "homepage": "https://github.com/smonggliddery/build",
-  "repository": "https://github.com/smonggliddery/build",
+  "homepage": "https://github.com/jameshemson/build",
+  "repository": "https://github.com/jameshemson/build",
   "license": "MIT",
   "keywords": ["build", "planning", "review", "verification", "skills"],
   "skills": "./skills/",
